@@ -88,6 +88,8 @@ a:active {
       font-size: 1.2rem;
     }
 
+    
+
 };
   
 
@@ -718,15 +720,51 @@ a:active {
  
 .con-form input {
     border-color: #ccc;
-    border-radius: 0;
+    border-radius: 5px;
+    width: 280px;
     color: #717171;
     margin-top: 30px; 
+}
+
+@media(min-width:568px){
+    .con-form input {
+        width: 450px;
+    }
+}
+
+@media(max-width: 328px){
+    .con-form input {
+        width: 320px;
+        justify-content: center;
+        text-align:start;
+    }
+}
+
+@media (max-width:240px){
+    .con-form input {
+        width: 200px;
+        justify-content: center;
+        text-align:start;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-cont h3{
+        font-size: 1.5rem;
+    }
+
+    #about p{
+        font-size: 1rem;
+    }
 }
 
 .con-form textarea {
     width: 100%; 
     height: 200px;
     margin:30px 0;
+    border-radius: 5px;
     border-color: #ccc;
     border-radius: 0;
     color: #717171;
