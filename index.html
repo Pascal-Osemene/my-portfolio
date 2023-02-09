@@ -405,12 +405,12 @@
                 <p>Kindly contact me for discussion on hiring me or rendering of my services.</p>
               </div>   
               <div class="row con-form">
-                <form action="" method="post" onsubmit="sendEmail(); reset(); return false;">
+                <form action="" method="" onsubmit="sendEmail(); reset(); return false;">
                   <div class="col-md-12">
                     <input type="text" name="full-name" placeholder="Full Name" class="form-control" id="name">
                   </div>
                   <div class="col-md-12">
-                    <input type="text" name="email" placeholder="Email Id" class="form-control" id="email">
+                    <input type="email" name="email" placeholder="Email Id" class="form-control" id="email">
                   </div>
                   <div class="col-md-12">
                     <input type="text" name="subject" placeholder="Subject" class="form-control" id="subject">
@@ -419,7 +419,7 @@
                     <textarea name="message" id="message"></textarea>
                   </div>
                   <div class="col-md-12 sub-but">
-                    <button class="btn btn-general btn-white" role="button" >Send</button>
+                    <button class="btn btn-general btn-white" role="button" type="submit" >Send</button>
                   </div>
                 </form>
                 
@@ -439,7 +439,6 @@
                 <div class="contact-mail contact-side-desc contact-box-desc">
                   <h3><i class="fa fa-envelope-o cl-atlantis fa-2x"></i> Email</h3>
                 <address class="address-details-f"> 
-                  Fax: 800 123 3456 <br>
                   Email: <a href="mailto:pascalosemene@gmail.com" class="">pascalosemene@gmail.com</a>
                 </address>
                 <ul class="list-inline social-icon-f top-data">
@@ -937,24 +936,7 @@
     <script src="js/counter/jquery.counterup.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-          // SecureToken : " a7ef66fd-849d-4a6f-8c9a-36ebf571579c ",
-            Host : "smtp.gmail.com",
-            Username : "pascalosemene@gmail.com",
-            Password : "2D1861F199C1F67ACF9A7C5138FBC2AEB0AE",
-            To : 'pascalosemene@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : document.getElementById("subject").value,
-            Body : "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Message: " + document.getElementById("message").value
-        }).then(
-          message => alert("Message sent successfully")
-        );
-      }
-    </script>
+    
     <script>
         $(document).ready(function(){
 
