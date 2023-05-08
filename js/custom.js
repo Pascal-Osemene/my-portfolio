@@ -29,19 +29,19 @@
 
 //  Contact Mailing script
 
-function sendEmail(){
-  Email.send({
-    // SecureToken : " a7ef66fd-849d-4a6f-8c9a-36ebf571579c ",
-      Host : "smtp.gmail.com",
-      Username : "pascalosemene@gmail.com",
-      Password : "2D1861F199C1F67ACF9A7C5138FBC2AEB0AE",
-      To : 'pascalosemene@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : document.getElementById("subject").value,
-      Body : "Name: " + document.getElementById("name").value
-              + "<br> Email: " + document.getElementById("email").value
-              + "<br> Message: " + document.getElementById("message").value
-  }).then(
-    message => alert("Message sent successfully")
-  );
-}
+// function sendEmail(){
+//   Email.send({
+//     SecureToken : "  dc4f2bc8-d717-4380-93dd-49aab6e9f048 ",
+//       // Host : "smtp.gmail.com",
+//       // Username : "pascalosemene@gmail.com",
+//       // Password : "2D1861F199C1F67ACF9A7C5138FBC2AEB0AE",
+//       To : 'pascalosemene@gmail.com',
+//       From : document.getElementById("email").value,
+//       Subject : document.getElementById("subject").value,
+//       Body : "Name: " + document.getElementById("name").value
+//               + "<br> Email: " + document.getElementById("email").value
+//               + "<br> Message: " + document.getElementById("message").value
+//   }).then(
+//     message => alert("Message sent successfully")
+//   );
+// }
